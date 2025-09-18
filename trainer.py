@@ -38,7 +38,7 @@ def format_chat_template(example):
 def main():
     # Configuration
     model_name = "unsloth/Phi-3-mini-4k-instruct-bnb-4bit"
-    jsonl_file_path = "your_dataset.jsonl"  # Update with your file path
+    jsonl_file_path = "phi3_training_filtered.jsonl"  # Update with your file path
     output_dir = "./phi3-finetuned"
     max_seq_length = 2048
     
