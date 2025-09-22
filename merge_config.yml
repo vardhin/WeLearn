@@ -1,0 +1,13 @@
+# config.yml
+base_model: google/gemma-3-270m-it
+slices:
+  - sources:
+      - model: google/gemma-3-270m-it
+        layer_range: [0, 32] # Standard for this model size
+loras:
+  - source: /home/vardhin/gemma3-270m-finetuned-A   # 👈 CHANGE THIS
+    weight: 1.0
+  - source: /home/vardhin/gemma3-270m-finetuned-B   # 👈 CHANGE THIS
+    weight: 1.0
+merge_method: linear
+dtype: bfloat16

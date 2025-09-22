@@ -1,0 +1,8 @@
+base_model: unsloth/gemma-3-270m-it
+dtype: bfloat16
+lora_merge_cache: ./lora_cache
+merge_method: slerp
+slices:
+- sources:
+  - model: C:/Users/YourUser/Desktop/MyMerge/gemma3-270m-finetuned-A
+  - model: C:/Users/YourUser/Desktop/MyMerge/gemma3-270m-finetuned-B
